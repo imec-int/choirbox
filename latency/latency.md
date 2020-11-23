@@ -7,6 +7,10 @@
 
 ## test setup
 
+1. ping
+2. tracert
+3. iperf
+4. jack_iodelay
 
 ## configurations
 
