@@ -1,9 +1,22 @@
 
+# environment
+start jack (patchbox-setup > jack > start)
+
+## choirbox 1
+start 
+```jacktrip -S```
+
+## choirbox2
+```jacktrip -C choirbox1.local```
+
+
+
 # latency
 
 ## What is latency?
 
 [network latency test tools](https://www.dnsstuff.com/network-latency-test-tools)
+
 
 ## test setup
 
