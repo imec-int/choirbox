@@ -36,9 +36,11 @@ is enabled by default on the patchbox OS
 changing fast due to high-paced development!
 
 ### dev env
-> sudo apt install -y --no-install-recommends build-essential librtaudio-dev qt5-default autoconf automake libtool make libjack-jackd2-dev qjackctl audacity git
+> sudo apt install -y --no-install-recommends build-essential \ 
+> librtaudio-dev qt5-default autoconf automake libtool make \ 
+> libjack-jackd2-dev qjackctl audacity git
 
-###jacktrip
+### jacktrip
 > git clone https://github.com/jacktrip/jacktrip.git
 
 To compile using the build script:
