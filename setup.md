@@ -4,7 +4,9 @@
 ## Hardware
 ## Software
 
- 
+[alternative: tpf-client](https://gitlab.zhdk.ch/TPF/tpf-client)
+
+[paper tpf-client](https://lac.linuxaudio.org/2019/doc/haefeli.pdf) 
 ### image
 
 [patchbox OS base image](https://blokas.io/patchbox-os/)
