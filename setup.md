@@ -26,7 +26,7 @@ only for easy access
  
 ### change hostname to something sensible
 ```
-nano /etc/hostname
+sudo nano /etc/hostname
 ```
 
 I picked choirbox1 to choirbox3
