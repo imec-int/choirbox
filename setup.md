@@ -33,6 +33,8 @@ I picked choirbox1 to choirbox3
 
 ### kernel PREEMPT
 is enabled by default on the patchbox OS
+but not on newest image...
+stick to stock 5.4.x kernel at the moment
 
 ```
 uname -v
