@@ -18,11 +18,21 @@ patch / blokaslabs
 setup wizard
 update to latest
  
+### soundcard
+pisound
+
+### default boot option
+desktop autologin
+
 ### jack setup
 48000/128/2
  
 ### wifi setup
 only for easy access
+ 
+### module
+
+none: Default patchbox OS environment
  
 ### change hostname to something sensible
 ```
