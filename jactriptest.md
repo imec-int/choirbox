@@ -57,3 +57,23 @@ extra loopback latency: 895 frames
 use 447 for the backend arguments -I and -O
 ```
 
+increasing the total number of roundtrips to 8 brings the number to 64ms, 74ms or 85ms
+this is all using the default jacktrip settings 48KHz, 16bit, buffer 64 samples
+```
+---------------------------------------------------------
+The Sampling Rate is: 48000
+---------------------------------------------------------
+The Audio Buffer Size is: 64 samples
+                      or: 256 bytes
+---------------------------------------------------------
+The Number of Channels is: 8
+
+
+  3584.000 frames     74.667 ms total roundtrip latency
+	extra loopback latency: 3583 frames
+	use 1791 for the backend arguments -I and -O ?? Inv
+  4096.000 frames     85.333 ms total roundtrip latency
+	extra loopback latency: 4095 frames
+	use 2047 for the backend arguments -I and -O
+```
+
