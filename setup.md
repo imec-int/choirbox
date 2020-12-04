@@ -7,6 +7,11 @@
 [alternative: tpf-client](https://gitlab.zhdk.ch/TPF/tpf-client)
 
 [paper tpf-client](https://lac.linuxaudio.org/2019/doc/haefeli.pdf) 
+
+Use VNC Viewer for viewing the raspberry pi screen
+
+
+
 ### image
 
 [patchbox OS base image](https://blokas.io/patchbox-os/)
@@ -101,6 +106,10 @@ sudo dd if=/dev/rdisk2 | gzip > pisound-jacktrip-img.gz
 jacktrip -C <IP> --clientname $HOSTNAME -n 8
 ``` 
 
+
+## debugging
+
+[iperf](https://www.haven2.com/index.php/use-iperf-to-test-port-forwarding-and-network-performance-between-participants-in-an-online-jam-session)
  
  
  
