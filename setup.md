@@ -94,6 +94,10 @@ sudo make install
 sudo dd if=/dev/rdisk2 | gzip > pisound-jacktrip-img.gz
 ```
 
+
+### connect 
+
+jacktrip -C <IP> --clientname $HOSTNAME -n 8
  
 
  
