@@ -106,6 +106,9 @@ sudo dd if=/dev/rdisk2 | gzip > pisound-jacktrip-img.gz
 jacktrip -C <IP> --clientname $HOSTNAME -n 8
 ``` 
 
+### port forwarding
+
+on your router make sure port 4464 is forwarding for TCP, port 61002 for UDP
 
 ## debugging
 
