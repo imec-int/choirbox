@@ -151,4 +151,8 @@ jacktrip -C <server IP> --clientname $HOSTNAME -n 2
 open the pd patch on all clients
  
  
+### BPM tapping
+
+[python3 script](metronome.py), necessary to install [gpiozero](https://gpiozero.readthedocs.io/en/stable/installing.html) via apt.
+
 

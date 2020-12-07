@@ -18,6 +18,10 @@ In another thread/process we want to alter the BPM of the pd patch by getting th
 The available pins, not used by the pisound are GPIO:
 2, 3, 4, 27, 22, 5, 7, 23, 14, 15
 
+references:
+https://github.com/defaultxr/taptempo.py
+
+
 '''
 button = Button('GPIO2')
 led = LED('GPIO3')
