@@ -115,30 +115,40 @@ on your router make sure port 4464 is forwarding for TCP, port 61002 for UDP
 [iperf](https://www.haven2.com/index.php/use-iperf-to-test-port-forwarding-and-network-performance-between-participants-in-an-online-jam-session)
  
  
- ## starting
- There should be 1 RPi/computer serving as server, the others are clients.
- ### Server
- On the server, we must make sure jackd is running.
- #### Mac OS X
- Open Jackpilot. Adapt the settings according to ![jack_setup](#jack_setup)
+## starting
  
+There should be 1 RPi/computer serving as server, the others are clients.
+
+### Server
+On the server, we must make sure jackd is running.
+
+#### Mac OS X
+
+Open Jackpilot. Adapt the settings according to [jack_setup](#jack_setup)
+ ![](./images/jackpilot_preferences.png)
  Run Jackpilot, then QJackctl.
  
- In QJackctl, go to setup and make sure the settings correspond to ![jack setup](#jack_setup)
+In QJackctl, go to setup and make sure the settings correspond to [jack setup](#jack_setup)
  
- open a terminal:
- '''
- jacktrip -S
- '''
- to start jacktrip in Hub server mode.
+open a terminal:
  
- ### clients
- open a terminal and enter:
- '''
- jacktrip -C <server IP> --clientname $HOSTNAME -n 2
- '''
+``` 
+jacktrip -S
+``` 
+to start jacktrip in Hub server mode:
+![server started](./images/server_start.png)
+
+Once a client connects you should see him appearing on the server terminal:
+![](./images/client_connected.png)
  
- open the pd patch on all clients
+### clients
+ 
+open a terminal and enter:
+
+```
+jacktrip -C <server IP> --clientname $HOSTNAME -n 2
+``` 
+open the pd patch on all clients
  
  
 
