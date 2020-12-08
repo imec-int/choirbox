@@ -21,11 +21,11 @@ the 4.x branch RT kernel
 ## hardware
 
 - all tests were run on RPI4B+ 8Gb
-- connected to a TP-link off the shelf gigabitswitch and pingtimes between boxes of < 0.1ms
+- connected to a TP-link off the shelf gigabit-switch and pingtimes between boxes of < 0.1ms
 
 ## jack_iodelay
 
-jack_iodelay is a standard tool included with jack to measure the delay in a asignal path. I ran the folowwing tests
+jack_iodelay is a standard tool included with jack to measure the delay in a signal path. I ran the following tests
 
 ### 2 RT kernel boxes using jacktrip -S (HUB mode)
 ```
