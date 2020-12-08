@@ -1,0 +1,6 @@
+name: jacktripClient
+description: |
+ connect to a Running jacktrip Server, needs to be specified in the script per device...
+author: Kasper Jordaens
+entry: jacktripClient.sh
+requires_confirmation: yes

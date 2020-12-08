@@ -1,0 +1,6 @@
+name: jacktripServer
+description: |
+    Running will *kill* all jacktrip servers and clients and start a new one in HUB mode.
+author: Kasper Jordaens
+entry: jacktripServer.sh
+requires_confirmation: yes

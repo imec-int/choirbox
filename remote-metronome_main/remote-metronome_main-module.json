@@ -1,15 +1,15 @@
 {
     "name" : "remote-metronome_main",
-    "display" : "Main metronome",
+    "display" : "remote metronome main",
     "parameters" : [
-        ["float","metroVOL","metroVOL",0.005,0.2,0.1],
-	["int", "tempo", "tempo", 40, 240, 120],
-	["int", "latency", "latency", 0, 50, 15],
-        ["bool","start_btn","start",0],
-	["bool","stop_btn","stop",0]
-    ],
+	["float","metroVOL",	"metroVOL", 0.005,  0.2,  0.1	],
+	["int",  "tempo", 	"tempo",    40,     240,  120	],
+	["int",  "latency", 	"latency",  0,      50,   15	],
+        ["bool", "start_btn",	"start",    0			],
+	["bool", "stop_btn",	"stop",     0			],
+	["float","vol1",	"vol1",	    0.005,  1,    0.5  	]
+	],
     "pages" : [
-        ["pg_main","Main",["start_btn","stop_btn", "metroVOL", "tempo", "latency"]],
-	["pg_mixer","Mixer",["start_btn","stop_btn", "metroVOL", "tempo", "latency"]]
+        ["pg_main","Main",["start_btn","stop_btn", "metroVOL", "tempo", "latency", "vol1"]]
 	  ]
 }

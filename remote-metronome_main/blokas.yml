@@ -1,4 +1,4 @@
-name: remote Metronome
+name: remote Metronome Main
 author: Kasper Jordaens
 entry: remote-metronome_main.pd
 image: remote-metronome_main.png
