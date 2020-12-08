@@ -1,0 +1,13 @@
+name: remote Metronome
+author: Kasper Jordaens
+entry: remote-metronome_main.pd
+image: remote-metronome_main.png
+tags:
+    - remote
+    - metronome
+    - live
+    - collaboration
+description: |
+    Remotely synchronized metronome. Set the delay, and play on a latency compensated metronome, making your remote live mix better.
+
+

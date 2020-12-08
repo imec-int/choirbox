@@ -1,0 +1,11 @@
+{
+    "name" : "remote-metronome_client",
+    "display" : "metronome client",
+    "parameters" : [
+        ["float","metroVOL","metroVOL",0.005,0.2,0.1],
+	["int", "latency", "latency", 0, 50, 15]
+    ],
+    "pages" : [
+        ["pg_main","Main",["metroVOL", "latency"]],
+	  ]
+}
