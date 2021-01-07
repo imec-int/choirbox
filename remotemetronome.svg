@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="remotemetronome.svg"
+   inkscape:version="1.0 (4035a4f, 2020-05-01)"
+   id="svg1110"
+   version="1.1"
+   viewBox="0 0 210 297"
+   height="297mm"
+   width="210mm">
+  <defs
+     id="defs1104" />
+  <sodipodi:namedview
+     inkscape:window-maximized="0"
+     inkscape:window-y="227"
+     inkscape:window-x="238"
+     inkscape:window-height="943"
+     inkscape:window-width="1252"
+     showguides="false"
+     showgrid="false"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="mm"
+     inkscape:cy="787.04368"
+     inkscape:cx="483.46339"
+     inkscape:zoom="0.35"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base" />
+  <metadata
+     id="metadata1107">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1">
+    <rect
+       inkscape:export-ydpi="100"
+       inkscape:export-xdpi="100"
+       inkscape:export-filename="/Users/kaos/remotemetronome.png"
+       ry="26.996494"
+       y="120.95238"
+       x="18.898809"
+       height="164.79761"
+       width="164.79761"
+       id="rect1740"
+       style="opacity:1;fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none" />
+    <g
+       inkscape:export-ydpi="100"
+       inkscape:export-xdpi="100"
+       inkscape:export-filename="/Users/kaos/remotemetronome_client.png"
+       transform="matrix(0.79162908,0,0,0.79162908,6.6525221,57.866983)"
+       id="g1734">
+      <path
+         id="rect1691"
+         style="opacity:1;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none"
+         transform="rotate(45)"
+         d="m 216.73369,16.012008 72.74108,26.192414 c 14.07162,5.066873 43.06745,10.925542 26.9965,26.996494 l -69.42921,69.429214 c -16.12294,16.12295 -26.04558,-8.80893 -31.11245,-22.88055 L 189.73719,43.008502 c -5.06687,-14.07162 12.92489,-32.063363 26.9965,-26.996494 z"
+         sodipodi:nodetypes="sssssss" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 70.303572,233.21131 H 171.60119"
+         id="path1694" />
+      <path
+         id="path1696"
+         d="m 79.856456,142.5147 45.150184,90.67894"
+         style="fill:none;stroke:#000000;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <ellipse
+         style="opacity:1;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none"
+         id="path1698"
+         cx="74.891022"
+         cy="134.19038"
+         rx="10.257096"
+         ry="10.592172" />
+      <path
+         id="ellipse1706"
+         style="opacity:1;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none"
+         sodipodi:type="arc"
+         sodipodi:cx="74.891022"
+         sodipodi:cy="134.19038"
+         sodipodi:rx="24.181297"
+         sodipodi:ry="24.971245"
+         sodipodi:start="2.3561945"
+         sodipodi:end="4.4505896"
+         sodipodi:open="true"
+         sodipodi:arc-type="arc"
+         d="m 57.792262,151.84772 a 24.181297,24.971245 0 0 1 -6.25858,-24.12037 24.181297,24.971245 0 0 1 17.09876,-17.65734" />
+      <path
+         style="opacity:1;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none"
+         id="ellipse1708"
+         sodipodi:type="arc"
+         sodipodi:cx="74.891022"
+         sodipodi:cy="134.19038"
+         sodipodi:rx="37.962658"
+         sodipodi:ry="39.202812"
+         sodipodi:start="2.3561945"
+         sodipodi:end="4.3633231"
+         sodipodi:arc-type="arc"
+         d="M 48.047369,161.91096 A 37.962658,39.202812 0 0 1 37.82823,125.70534 37.962658,39.202812 0 0 1 61.907027,97.351791"
+         sodipodi:open="true" />
+    </g>
+  </g>
+</svg>
