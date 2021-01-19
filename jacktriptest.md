@@ -149,3 +149,22 @@ but a bit more stable... every hop was exactly 12ms, in single hop en exactly 8 
 
 
 to put things in perspective this is roundtrip latency, so back/forth. 12ms at speed of sound 300m/s (for sake of simplicity) is 3.6m It looks like some of the voices might be arriving too early compared to a real life stage setup... we do need to keep the number of jacktrip hops low, but with the server model this is not a problem if we can connect enough clients to a single server.
+
+
+
+### delay origins
+
+via jack_iodelay
+
+jacksettings: 
+
+```
+128 frames buffer
+48kHz
+n = 2
+``` 
+#### ADC + DAC latency
+basis latency via ADC en DAC = framesize + DAC/ADC = 428. 
+
+Hieruit leiden we af dat DAC + ADC 300 frames in beslag neemt.
+<screenshot>

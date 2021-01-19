@@ -140,6 +140,9 @@ to start jacktrip in Hub server mode:
 
 Once a client connects you should see him appearing on the server terminal:
 ![](./images/client_connected.png)
+
+
+
  
 ### clients
  
@@ -147,12 +150,46 @@ open a terminal and enter:
 
 ```
 jacktrip -C <server IP> --clientname $HOSTNAME -n 2
+testing: jacktrip -C choirbox1.local --nojackportsconnect --clientname $HOSTNAME -n 2
+
 ``` 
 open the pd patch on all clients
  
- 
+### save jacktrip connections
+
+```
+jmess -s choirbox_connections.xml
+``` 
+#### disconnect
+```
+jmess -D
+``` 
+#### reload
+```
+jmess -c choirbox_connections.xml
+``` 
+### patching
+#### master 
+Important on the master (Qjackctl): the master is a client as well, yet does not receive its inputs via jacktrip, but from the system. So we have to connect system to the pure data input, instead of the jacktrip receives. 
+
+The remote clients, of course, come into the jacktrip receives and should be patched this way. 
+#### clients
+On the clients, we patch the system inputs to the jacktrip sends, and the jacktrip receives to the system outputs.
+
 ### BPM tapping
 
 [python3 script](metronome.py), necessary to install [gpiozero](https://gpiozero.readthedocs.io/en/stable/installing.html) via apt.
 
 
+## testen in ASIL lab
+Voorheen hadden tussen de muide en de krook 25ms roundtrip delay. In het ASIL lab liggen de waardes hoger.
+
+![ASIL switch rechtstreeks](./images/ASIL_switch_rechtstreeks.png) Rechtstreeks op de grote switch van het ASIL lab verkrijgen we 48ms loopback delay.
+
+Om gecontroleerd te kunnen testen verbinden we, via statisch IP adres, 2 raspberry pi's met elkaar. De loopback delay dan is
+![]()
+
+
+
+###hotspots
+choirbox1:5 password blokaslabs
