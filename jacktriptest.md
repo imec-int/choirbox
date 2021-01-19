@@ -161,10 +161,20 @@ jacksettings:
 ```
 128 frames buffer
 48kHz
-n = 2
+n = 2 (period)
 ``` 
 #### ADC + DAC latency
 basis latency via ADC en DAC = framesize + DAC/ADC = 428. 
 
 Hieruit leiden we af dat DAC + ADC 300 frames in beslag neemt.
 <screenshot>
+
+
+### best settings
+```
+buffer 64
+48000Hz
+redundancy omhoog
+kernel maakte niet zoveel uit
+
+```
