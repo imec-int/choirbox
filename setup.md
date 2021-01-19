@@ -30,7 +30,9 @@ pisound
 desktop autologin
 
 ### jack setup
-48000/64/2
+48000/64/2 
+
+check redundancy options if bandwith leaves some room.
  
 ### wifi setup
 only for easy access
@@ -150,7 +152,7 @@ open a terminal and enter:
 
 ```
 jacktrip -C <server IP> --clientname $HOSTNAME -n 2
-testing: jacktrip -C choirbox1.local --nojackportsconnect --clientname $HOSTNAME -n 2
+e.g. jacktrip -C choirbox1.local --nojackportsconnect --clientname $HOSTNAME -n 2
 
 ``` 
 open the pd patch on all clients

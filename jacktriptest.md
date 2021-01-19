@@ -33,18 +33,24 @@ $ uname -a
 Linux choirbox1 4.19.71-rt24-v7l+ #1 SMP PREEMPT RT Wed Mar 11 17:15:58 EET 2020 armv7l GNU/Linux
 ```
 running jackserver on one box:
+
 ```jacktrip -S```
 and also 
+
 ```jacktrip -C localhost --clientname choirbox1```
 
 while on the other box
+
 ```jacktrip -C choirbox1 --clientname choirbox2```
 
 results in 10.666 to 12ms delay when patching 
 jack-iodelay out > choirbox2send > (jacktripserver receive) > (jacktripserver send choirbox2) > choirbox2 receive > jack_iodelay in
 running 
+
 ``` jack_iodelay```
+
 should give this output
+
 ```
    512.000 frames     10.667 ms total roundtrip latency
 	extra loopback latency: 511 frames
@@ -56,6 +62,7 @@ should give this output
 
 
 patching an extra round to the jackserver over another channel gives:
+
 ```   
 896.000 frames     18.667 ms total roundtrip latency
 extra loopback latency: 895 frames
@@ -64,6 +71,7 @@ use 447 for the backend arguments -I and -O
 
 increasing the total number of roundtrips to 8 brings the number to 64ms, 74ms or 85ms
 this is all using the default jacktrip settings 48KHz, 16bit, buffer 64 samples
+
 ```
 ---------------------------------------------------------
 The Sampling Rate is: 48000
@@ -83,10 +91,12 @@ The Number of Channels is: 8
 ```
 
 ### 2 non RT kernel 5.4 boxes using jacktrip -S (HUB mode)
+
 ```
 $ uname -a
 Linux choirbox2 5.4.72-v7l+ #1356 SMP Thu Oct 22 13:57:51 BST 2020 armv7l GNU/Linux
 ```
+
 running jackserver on one box:
 ```jacktrip -S```
 and also 
@@ -175,6 +185,5 @@ Hieruit leiden we af dat DAC + ADC 300 frames in beslag neemt.
 buffer 64
 48000Hz
 redundancy omhoog
-kernel maakte niet zoveel uit
-
+kernel (rt/non-rt)
 ```

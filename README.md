@@ -1,5 +1,5 @@
 # choirbox
-
+![](./screenshots/choirbox.jpg)
 ## Prerequisites
 
 - 5 choirboxes assembled
