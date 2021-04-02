@@ -4,7 +4,7 @@
 
 - 5 choirboxes assembled
 - names are altered in `/etc/hosts` & `/etc/hostname` to choirbox1 - choirbox5
-
+- jacktrip installed at version: `1.3`
 ## demo setup
 First decide who will act as server. We'll assume it is choirbox1. The config files are prepared as such.
 You need the public IP adress of the Server, or the local adress if everyone is on the same network.
@@ -38,10 +38,21 @@ The interface allows control of the metronome, as well as the mix
 ## usage of repository
 ### personas
 <wie gebruikt er wat van scripts?>
+
 ### pure data
 #### prerequisites
-<welke files dienen we waar naar toe te kopieren?>
 
-#### what are we using pure data 
+On the master, copy [remote-metronome_main](./remote-metronome_client/) to [/usr/local/puredata-patches].
+
+If you then connect via bluetooth to the master Rpi with the pisound app, you can automatically open the mixer. (for initial pairing, push the button on the master rpi for 3 seconds)
+
+
+<TODO verify with Kasper if we need to adapt the IP address in the pd patch?>
+
+
+#### what are we using pure data for?
+
+On the master we use it as a mixer & for controlling the metronome.
+
 #### what to install?
 Normally nothing **if** you use the [patchbox OS image](https://blokas.io/patchbox-os/)
