@@ -133,9 +133,9 @@ if(__name__ == "__main__"):
                     cb.execute_cmd(i)
             if(cb.type=="server"):
                 print("starting jacktrip server for ", cb.name)
-                cb.execute_cmd("/home/patch/choirbox/scripts/startup/jacktripServer/jacktripServer.sh")
+                cb.execute_cmd("/home/patch/choirbox/scripts/startup/jacktripServer/jacktripServer.sh &")
             print("starting jacktrip as client for ", cb.name)
-            cb.execute_cmd("/usr/local/bin/jacktrip -C choirbox1.local --clientname $HOSTNAME --udprt -n2 -K $HOSTNAME &")
+            cb.execute_cmd("/home/patch/choirbox/scripts/startup/jacktripClient/jacktripClient.sh &")
 
 
     #     temp = threading.Thread(target=choirboxes.update_choirbox, args=(val))
