@@ -13,6 +13,8 @@ first connect to all choirboxes
 then check if jacktrip is running in server mode or client mode, if so stop.
 alter the buffer size
 restart jacktrip
+
+TODO the script isn't yet functional, for some reason the server isn't created
 """
 
 choirbox_list = [
@@ -122,7 +124,6 @@ if(__name__ == "__main__"):
         if(cb.status==0):
             print("killing all jacktrip processes")
             cb.execute_cmd("killall jacktrip")
-            # sleep(2)
             print("executing commands from ")
             #TODO right now we're looping through the choirboxes, if choirbox1 isn't server, then the server will be launched in a later time...
             with open(args.cmdfile) as f:
@@ -133,9 +134,9 @@ if(__name__ == "__main__"):
                     cb.execute_cmd(i)
             if(cb.type=="server"):
                 print("starting jacktrip server for ", cb.name)
-                cb.execute_cmd("/home/patch/choirbox/scripts/startup/jacktripServer/jacktripServer.sh &")
+                cb.execute_cmd("/home/patch/choirbox/scripts/startup/jacktripServer/jacktripServer.sh")
             print("starting jacktrip as client for ", cb.name)
-            cb.execute_cmd("/home/patch/choirbox/scripts/startup/jacktripClient/jacktripClient.sh &")
+            cb.execute_cmd("/home/patch/choirbox/scripts/startup/jacktripClient/jacktripClient.sh")
 
 
     #     temp = threading.Thread(target=choirboxes.update_choirbox, args=(val))

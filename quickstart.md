@@ -13,8 +13,8 @@ The server is also the one who uses the android application for mixing the sound
 ### adapt RPI bashrc for easier connection
 
 ```bash
-echo "alias jackclient='jacktrip -C choirbox1.local --clientname $HOSTNAME --udprt -n2 -K $HOSTNAME'" >> .bash_aliases
-
+echo "alias jackclient='/home/patch/scripts/startup/jacktripClient/jacktripClient.sh" >> .bash_aliases
+echo "alias jackserver='/home/patch/scripts/startup/jacktripServer/jacktripServer.sh" >> .bash_aliases
 source .bashrc
 ```
 
