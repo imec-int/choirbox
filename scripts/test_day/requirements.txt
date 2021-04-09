@@ -1,0 +1,3 @@
+tabulate
+paramiko
+netifaces

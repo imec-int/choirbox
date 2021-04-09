@@ -7,7 +7,7 @@
 # of the BSD license.  See the LICENSE file for details.
 #
 
-echo "kill all jacktrip Servers & Clients"
-killall jacktrip
+# echo "kill all jacktrip Servers & Clients"
+# killall jacktrip
 echo "starting Jacktrip Server in HUB mode"
-/usr/bin/jacktrip -S 
+/usr/local/bin/jacktrip -S 

@@ -8,5 +8,6 @@
 #
 
 echo "starting Jacktrip Client in HUB mode"
-nohup jacktrip -C choirbox1 -n 8
+nohup /usr/local/bin/jacktrip -C choirbox1.local --clientname $HOSTNAME --udprt -n2 -K $HOSTNAME
+
 
