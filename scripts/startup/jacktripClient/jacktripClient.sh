@@ -8,6 +8,9 @@
 #
 
 echo "starting Jacktrip Client in HUB mode"
-nohup /usr/local/bin/jacktrip -C choirbox1.local --clientname $HOSTNAME --udprt -n2 -K $HOSTNAME
+nohup /usr/local/bin/jacktrip -C choirbox1.local --clientname $HOSTNAME --udprt -n2 -K $HOSTNAME &
+/usr/bin/jmess -D 
+/usr/bin/jmess -c $HOSTNAME.xml
+
 
 

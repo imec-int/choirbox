@@ -100,6 +100,9 @@ class choirbox():
                     # gateway["status"]["msg"] = text
             else:
                 print("***Error***", exit_status)
+                for line in stdout:
+                    text = line.strip('\n')
+                    print(text)
                 # gateway["status"]["msg"] = exit_status
         client.close()
 

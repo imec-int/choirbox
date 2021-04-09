@@ -10,4 +10,4 @@
 # echo "kill all jacktrip Servers & Clients"
 # killall jacktrip
 echo "starting Jacktrip Server in HUB mode"
-/usr/local/bin/jacktrip -S 
+/usr/local/bin/jacktrip -S &
