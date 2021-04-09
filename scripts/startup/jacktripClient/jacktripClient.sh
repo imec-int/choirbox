@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # Kasper Jordaens
 # All rights reserved.
@@ -8,9 +8,9 @@
 #
 
 echo "starting Jacktrip Client in HUB mode"
-/usr/local/bin/jacktrip -C choirbox1.local --clientname $HOSTNAME --udprt -n2 -K $HOSTNAME &
+/usr/local/bin/jacktrip -C choirbox1.local --clientname $(hostname) --udprt -n2 -K $(hostname) &
 /usr/bin/jmess -D 
-/usr/bin/jmess -c /home/patch/$HOSTNAME.xml
+/usr/bin/jmess -c /home/patch/$(hostname).xml
 
 
 
