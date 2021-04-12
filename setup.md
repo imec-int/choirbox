@@ -33,11 +33,25 @@ setup wizard:
 | wifi setup|only for easy access, not for audio stream preferred|
 | module|none: Default patchbox OS environment|
 
+### choirbox repo
+
+The choirbox repo changes the hostname, , updates the linux kernel, installs latest jacktrip & jmess, creates command aliases, and reboots
+
+```bash
+git clone https://github.com/imec-int/choirbox.git
+cd choirbox
+sudo chmod 755 install.sh
+./install.sh
+```
+
 ### change hostname to something sensible
 
 ```bash
+sudo hostname <new hostname>
+
 sudo nano /etc/hostname
 sudo nano /etc/hosts
+sudo apt-get update && sudo apt-get upgrade -y
 ```
 
 We picked choirbox1 to choirbox5
@@ -77,16 +91,9 @@ sudo make install
 cd
 ```
 
-### choirbox repo
 
-```bash
-git clone https://github.com/imec-int/choirbox.git
-cd choirbox
-sudo chmod 755 install.sh
-./install.sh
-```
 
-commands:
+##commands:
 
 | command| alias for| adapt in script|
 |-|-|-|
@@ -101,7 +108,7 @@ commands:
 ```
 sudo dd if=/dev/rdisk2 | gzip > pisound-jacktrip-img.gz
 ``` -->
-
+<!-- 
 ### connect
 
 ```bash
@@ -198,8 +205,10 @@ Voorheen hadden tussen de muide en de krook 25ms roundtrip delay. In het ASIL la
 ![ASIL switch rechtstreeks](./images/ASIL_switch_rechtstreeks.png) Rechtstreeks op de grote switch van het ASIL lab verkrijgen we 48ms loopback delay.
 
 Om gecontroleerd te kunnen testen verbinden we, via statisch IP adres, 2 raspberry pi's met elkaar. De loopback delay dan is
-![]()
+![]() -->
 
 ### hotspots
 
 choirbox1:5 password blokaslabs
+
+### 
