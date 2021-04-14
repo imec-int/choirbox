@@ -7,21 +7,42 @@ sudo sed -i 's/patchbox/'"$devicename"'/g' /etc/hosts
 
 sudo apt-get update && sudo apt-get upgrade -y
 
+# change to home directory to check for git installations
+cd
+
+#check if jacktrip repo exists already, otherwise clone it
 echo "installing jacktrip"
-git clone https://github.com/jacktrip/jacktrip.git
+if [ ! -d "jacktrip"]
+then
+    git clone https://github.com/jacktrip/jacktrip.git
+else
+    echo "update jacktrip"
+    cd jacktrip
+    git pull
+    cd
+fi
 sudo apt install -y --no-install-recommends build-essential librtaudio-dev qt5-default autoconf automake libtool make libjack-jackd2-dev qjackctl audacity git
 cd jacktrip/src && ./build
 cd ../builddir && sudo make install
 cd
 
 echo "installing jmess"
-git clone https://github.com/jacktrip/jmess-jack.git
+if [! -d "jmess-jack"]
+then
+    git clone https://github.com/jacktrip/jmess-jack.git
+else
+    echo "update jmess" 
+    cd jmess-jack
+    git pull
+    cd
+fi
 cd jmess-jack/jmess/src && ./build
 sudo make install
 cd
 
-if [ -d "../choirbox" ]
+if [ -d "choirbox" ]
 then
+    cd choirbox
     echo "copying the necessary scripts"
     echo "alias jackclient='$(pwd)/scripts/startup/jacktripClient/jacktripClient.sh'" >> /home/patch/.bash_aliases
     echo "alias jackserver='$(pwd)/scripts/startup/jacktripServer/jacktripServer.sh'" >> /home/patch/.bash_aliases
