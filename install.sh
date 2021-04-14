@@ -12,7 +12,7 @@ cd
 
 #check if jacktrip repo exists already, otherwise clone it
 echo "installing jacktrip"
-if [ ! -d "jacktrip"]
+if [[ ! -d "jacktrip"]]
 then
     git clone https://github.com/jacktrip/jacktrip.git
 else
@@ -27,7 +27,7 @@ cd ../builddir && sudo make install
 cd
 
 echo "installing jmess"
-if [! -d "jmess-jack"]
+if [[! -d "jmess-jack"]]
 then
     git clone https://github.com/jacktrip/jmess-jack.git
 else
@@ -40,7 +40,7 @@ cd jmess-jack/jmess/src && ./build
 sudo make install
 cd
 
-if [ -d "choirbox" ]
+if [[ -d "choirbox" ]]
 then
     cd choirbox
     echo "copying the necessary scripts"
