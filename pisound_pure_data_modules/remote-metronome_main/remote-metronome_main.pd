@@ -1,4 +1,4 @@
-#N canvas -234 168 1280 624 12;
+#N canvas 187 277 1280 624 12;
 #X declare -stdpath blokas;
 #X obj 184 247 bng 15 250 50 0 start_btn start_btn empty 17 7 0 10
 -4034 -1 -1;
@@ -21,7 +21,7 @@
 #X obj 398 470 *~;
 #X msg 51 146 disconnect;
 #X obj 505 374 vsl 15 128 0.005 0.2 1 0 metroVOL metroVOL empty 0 -9
-0 10 -262144 -1 -1 10314 1;
+0 10 -262144 -1 -1 0 1;
 #X obj 398 498 *~;
 #X text 528 481 metronome_volume;
 #X obj 19 -23 declare -stdpath blokas;
@@ -278,6 +278,7 @@
 #X msg 3364 89 0.3;
 #X msg 4188 90 0.3;
 #X msg 4986 92 0.3;
+#X obj 1285 351 dac~ 1 2 3 4 5;
 #X connect 0 0 7 0;
 #X connect 0 0 2 0;
 #X connect 1 0 25 0;
@@ -348,6 +349,11 @@
 #X connect 59 0 46 5;
 #X connect 68 0 82 0;
 #X connect 68 1 82 1;
+#X connect 68 2 268 0;
+#X connect 68 3 268 1;
+#X connect 68 4 268 2;
+#X connect 68 5 268 3;
+#X connect 68 6 268 4;
 #X connect 69 0 68 2;
 #X connect 70 0 68 1;
 #X connect 71 0 68 4;
