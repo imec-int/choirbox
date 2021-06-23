@@ -5,9 +5,12 @@ green=`tput setaf 2`
 reset=`tput sgr0`
 
 read -p "What's the new device name? " devicename
+read -p "how many devices will be connected?" dev_amount
 sudo hostname $devicename
 sudo sed -i 's/patchbox/'"$devicename"'/g' /etc/hostname
 sudo sed -i 's/patchbox/'"$devicename"'/g' /etc/hosts
+#alter the hotspot name to the new box its name
+sudo sed -i 's/Patchbox/'"$devicename"'/g' /etc/hostapd/hostapd.conf
 
 sudo apt-get update && sudo apt-get upgrade -y
 
@@ -55,5 +58,10 @@ if [ -d "choirbox" ]; then
 else
     echo "{red}Error: Install must be executed from the git repo choirbox (with this exact name){reset}"
 fi
+
+# change the PD basic settings for 5 input channels and 10 output channels:
+outchan=$(($dev_amount * 2))
+sed -i '/audioindev1/c\audioindev1: 0 '"$dev_amount"'' $HOME/.pdsettings
+sed -i '/audiooutdev1/c\audiooutdev1: 0 '"$outchan"'' $HOME/.pdsettings
 
 sudo reboot

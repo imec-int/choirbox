@@ -18,21 +18,22 @@ Use VNC Viewer for viewing the raspberry pi screen
 starting settings:
 
 |function|username|password|
-|-|-|-|
+|---|---|---|
 |ssh to $HOSTNAME|patch | blokaslabs|
 |connecto to Wifi hotspot $HOSTNAME|-|blokaslabs|
 
 ### initial login
 
 setup wizard:
-| section |  choice |
-| ---|---|
-| update to latest | yes|
-|soundcard| pisound|
-| default boot option|desktop autologin|
-|jack setup|48000/64/2 (check redundancy options if bandwith leaves some room.) |
-| wifi setup|only for easy access, not for audio stream preferred|
-| module|none: Default patchbox OS environment|
+
+|section|choice|
+|---|---|
+|update to latest|yes|
+|soundcard|pisound|
+|default boot option|desktop autologin|
+|jack setup|48000/64/2 (check redundancy options if bandwith leaves some room.)|
+|wifi setup|only for easy access, not for audio stream preferred|
+|module|none: Default patchbox OS environment|
 
 ### Full install via choirbox repo
 
@@ -48,7 +49,7 @@ sudo chmod 755 install.sh
 ## commands
 
 | command| alias for| adapt in script|
-|-|-|-|
+|---|---|---|
 |jackclient| connect device as jackclient|[script location](./scripts/startup/jacktripClient/jacktripClient.sh)|
 |jackserver| connect device as jackserver|[script location](./scripts/startup/jacktripServer/jacktripServer.sh)|
 |jackpatch| patch device based on $HOSTNAME.xml, the xml is adapted for servers or clients separately|[script location](./scripts/startup/patching/patch.sh)|
