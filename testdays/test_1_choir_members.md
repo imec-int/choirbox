@@ -1,7 +1,9 @@
 # test day 1
 
 > Date:
+>
 > number of people: 4 choir + 1 instructor
+>
 > locations: Krook +4
 
 ## tech constraints
@@ -40,4 +42,5 @@ Also, soundquality could drastically improved. The combination headphones (close
 ### what are first things that need to be **improved**?
 
 1. Audio quality
-2. 
+
+een dingetje dat nog niet op de github staat is hun bezorgdheid rond latency over reguliere wifi/de verschillende incoming audio streams vs. optie dirigent als centrale hub waar de verschillende audio streams tot een enkele worden gemixt en gedispatcht 
